@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap);
+}
+
+@font-face {
+    font-family: "M PLUS Rounded 1c";
+    src: url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=M+PLUS+Rounded+1c&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 84px;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 64px;
+    box-shadow:1px 1px 50px 10px #afafaf;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-size: 30px;
+            font-weight: bold;
+            font-family:"Comfortaa";
+            color:#5f6366;
+            img{
+                width: 50px;
+                height:50px;
+            }
+        
+        }
+        h4{
+            font-size: 30px;
+            font-weight: bold;
+            color:#535252;
+        } 
+        &:nth-child(2)
+        {
+            h4 {
+                font-family: "Comfortaa";
+            }
+        }
+        &:last-child
+        {
+            h4 {
+                color:#0e7a9b ;
+                font-size: 23px;
+                font-weight: 500;
+            }
+        }
+       
+}
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #F5F5F7;
+}
+
+main{
+    width: 100vw;
+    margin-top: 84px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 80px;
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        
+        h1{
+            color:#2b2b2b ;
+            font-size: 60px;
+            font-weight: 9000;
+            text-align:center;
+            width: 100%;
+            font-weight: 900;
+            font-family: "M PLUS Rounded 1c";
+            top: 30000px;
+        }
+        h2{
+            color:#000000 ;
+            font-size: 40px;
+            width: 90%;
+            text-align: left;
+            font-weight:4000 ;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+        }
+        h3{
+            color:#313131 ;
+            font-size: 30px;
+            width: 90%;
+            font-weight:40 ;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h4{ color:#313131 ;
+            font-size: 30px;
+            width: 90%;
+            font-weight:40 ;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .table {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            grid-auto-rows: auto;
+
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .template_image_1{
+            border-radius:4%;
+            block-size: 300px;
+            width: 450px;
+            height: 400px;
+
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #929292; 
+    color: rgb(44, 44, 44); 
+    padding: 30px; /* Поля вокруг содержимого */
+    position: fixed; /* Закрепление футера внизу */
+    bottom: 0; /* Привязка футера к низу окна браузера */
+    border-top-left-radius: 10px; /* Закругление верхнего левого угла */
+    border-top-right-radius: 10px;
+}
+
+.container {
+    text-align: left; /* Выравнивание текста по центру */
+}
